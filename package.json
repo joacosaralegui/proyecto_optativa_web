@@ -1,0 +1,22 @@
+{
+  "name": "proyecto_optativa_web",
+  "version": "1.0.0",
+  "description": "Proyecto de aplicacion de transacciones para optativa de Desarrollo web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joacosaralegui/proyecto_optativa_web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joacosaralegui/proyecto_optativa_web/issues"
+  },
+  "homepage": "https://github.com/joacosaralegui/proyecto_optativa_web#readme",
+  "dependencies": {
+    "mongodb": "^3.6.6"
+  }
+}

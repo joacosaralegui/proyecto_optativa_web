@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/joacosaralegui/proyecto_optativa_web#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "mongodb": "^3.6.6",
     "mongoose": "^5.12.8"
   }

@@ -4,11 +4,20 @@ var router = express.Router();
 // Obtener controller
 var ctrlTransactions = require('../controllers/transactions')
 
-// Definir rutas y callbacks 
-router.get('/transactions', ctrlTransactions.transactionsList);
+// Crear transaccion
+router.post('/transactions', ctrlTransactions.create);
 
-// TODO: Agregar las rutas para update create y delete
-// https://classroom.google.com/u/0/c/MzA2MDg0ODg1NTEw/a/MzA2MDg0ODg1NTU0/details
+// Traer todas las transacciones
+router.get('/transactions', ctrlTransactions.findAll);
+
+// Traer una transaccion
+router.get('/transactions/:_id', ctrlTransactions.findOne);
+
+// Actualizar una transaccion
+router.put('/transactions/:id', ctrlTransactions.update);
+
+// Borrar una transaccion
+router.delete('/transactions/:id', ctrlTransactions.delete);
 
 // Exportar router
 module.exports = router;

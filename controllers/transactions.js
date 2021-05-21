@@ -92,3 +92,18 @@ module.exports.delete = (req, res) => {
         });
     });
 };
+
+
+/*
+Algunos comandos para probar
+
+CREATE:
+curl -XPOST -H "Content-type: application/json" -d '{"sender":{"id":3,"name":"Charly"},"receiver":{"id":2,"name":"Galo"},"_id":"608815a60f43893788a52fa2","amount":5550,"currency":"pesos","date":"2021-03-31T14:13:54.000Z"}' 'http://localhost:3000/transactions'
+
+UPDATE: (actualizar el final de la url con el _id del create anterior) 
+curl -XPUT -H "Content-type: application/json" -d '{"sender":{"id":2,"name":"Galo"},"receiver":{"id":3,"name":"Charly"},"amount":512340,"currency":"pesos","date":"2021-03-31T14:13:54.000Z"}' 'http://localhost:3000/transactions/<id del create anterior>'
+
+DELETE:
+curl -X DELETE http://localhost:3000/transactions/<id del transaction>
+
+*/

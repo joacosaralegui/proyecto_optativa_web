@@ -30,6 +30,10 @@ angular.module('app', [])
 	// Cargar una transaccion nueva
 	$scope.addTransaction = function () {
 		console.log($scope.transaction);
+		// Sacar el _id del objeto para crear uno nuevo
+		if ("_id" in $scope.transaction)
+			delete $scope.transaction._id;
+
 		$http.post('/transactions',$scope.transaction)
 		.then(function(response) {
 			console.log("Ok ADD", response);

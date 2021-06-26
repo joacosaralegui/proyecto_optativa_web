@@ -6,10 +6,11 @@
 var mongoose = require('mongoose')
 
 // Connectarse a mongo con mongoose
+// EN PRODUCCION GUARDAR EN UN ARCHIVO OCULTO O EN VARIABLES DE ENTORNO
 const dbName = 'transactions';
 const user = 'joaco';
 const pass = "joaco1996";
-const url = 'mongodb://'+user+':'+pass+'@localhost:27017/' + dbName;
+const url = 'mongodb://'+user+':'+pass+'@127.0.0.1:27017/' + dbName;
 const connection = mongoose.createConnection(url);
 
 // Crear o traer la coleccion Transactions

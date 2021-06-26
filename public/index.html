@@ -35,32 +35,37 @@
 
 
         <hr/>
-        <button ng-click="propertyName = null; reverse = false">Set to unsorted</button>
+        <h3 style="display:inline-block;margin:0;">Transacciones</h3> <button ng-click="propertyName = null; reverse = false" style="margin-left:10px;" class="btn btn-default">Reestablecer orden</button>
         <hr/>
 
-      <table class="table table-striped">
+      <table class="table table-striped table-with-border">
       	<thead>
       		<tr>
       <th>
-        <button ng-click="sortBy('sender.name')">Remitente</button>
+        <button ng-click="sortBy('sender.name')" class="btn btn-default">Remitente</button>
         <span class="sortorder" ng-show="propertyName === 'sender.name'" ng-class="{reverse: reverse}"></span>
       </th>
       <th>
-        <button ng-click="sortBy('receiver.name')">Destinatario</button>
+        <button ng-click="sortBy('receiver.name')" class="btn btn-default">Destinatario</button>
         <span class="sortorder" ng-show="propertyName === 'receiver.name'" ng-class="{reverse: reverse}"></span>
       </th>
       <th>
-        <button ng-click="sortBy('amount')">Cantidad</button>
+        <button ng-click="sortBy('amount')" class="btn btn-default">Cantidad</button>
         <span class="sortorder" ng-show="propertyName === 'amount'" ng-class="{reverse: reverse}"></span>
       </th>
       <th>
-        <button ng-click="sortBy('currency')">Moneda</button>
+        <button ng-click="sortBy('currency')" class="btn btn-default">Moneda</button>
         <span class="sortorder" ng-show="propertyName === 'currency'" ng-class="{reverse: reverse}"></span>
       </th>
       <th>
-        <button ng-click="sortBy('date')">Fecha</button>
+        <button ng-click="sortBy('date')" class="btn btn-default">Fecha</button>
         <span class="sortorder" ng-show="propertyName === 'date'" ng-class="{reverse: reverse}"></span>
       </th>
+      <th>
+      </th>
+      <th>
+      </th>
+
     </tr>
       	</thead>
       	<tbody>

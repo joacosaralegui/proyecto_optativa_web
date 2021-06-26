@@ -7,3 +7,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+.table-with-border {
+  border: 1px solid #bfbfbf;
+  border-radius:10px;
+}

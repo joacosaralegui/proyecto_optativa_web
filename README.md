@@ -2,7 +2,7 @@
 
 Alumnos:
   - Joaquin Saralegui
-  - Galo Piancola
+  - Galo Pianciola
 
 Entrega 2: Operaciones CRUD en MongoDB desde Node.js -> ver carpeta entregas_anteriores/mongodb/index_mongodb.js
 

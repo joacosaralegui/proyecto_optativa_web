@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
     <script src="app.js"></script>
@@ -21,9 +23,17 @@
   </head>
   <body ng-controller="myController">
     <div class="container-fluid">
-      <h1>Registro de transacciones</h1>
 
-      <pre>Sort by = {{propertyName}}; reverse = {{reverse}}</pre>
+
+      <div class="jumbotron">
+        <h1>Registro de transacciones</h1>
+        <p>Proyecto para la optativa de Desarrollo Web</p>
+        <p><a class="btn btn-primary btn-lg" href="https://github.com/joacosaralegui/proyecto_optativa_web" target="_blank" role="button"><span class="glyphicon glyphicon-console" aria-hidden="true"></span> Repositorio GitHub</a></p>
+      </div>
+
+      <div class="alert alert-info" role="alert">Trabajo realizado por <a href="mailto:joacosaralegui@gmail.com">Joaquin Saralegui</a> y <a href="mailto:gpianciolabartol@alumnos.exa.unicen.edu.ar">Galo Pianciola</a></div>
+
+
         <hr/>
         <button ng-click="propertyName = null; reverse = false">Set to unsorted</button>
         <hr/>
